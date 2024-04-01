@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To-Do-List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Golos+Text:wght@400;600&family=Lobster&family=Noto+Sans:wght@200;300;400;500&family=Poppins:wght@100;400&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="project3.css">
+</head>
+
+<body onload="initClock()">
+    <div class="to-do-list">
+        <div class="up">
+            <header>
+                <div class="heading">
+                    <h2>Task List 2023</h2>
+                </div>
+                <label for="input">Enter your task:</label>
+                <br>
+                <input type="text" placeholder="What you have planned?...." minlength="5" maxlength="500" class="input">
+                <button class="btn" onclick="add_task()">AddTask</button>
+            </header>
+
+            <div class="wrapper">
+                <div class="incompleted complete">
+                    <h2>Task pending</h2>
+                    <ul class="list">
+
+                    </ul>
+                </div>
+
+                <div class="completed complete">
+                    <h2>Completed</h2>
+                    <ul class="completed-list">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="date-time">
+            <div class="date">
+                <span id="day">Day</span>,
+                <span id="month">Month</span>
+                <span id="datenum">00</span>,
+                <span id="year">year</span>
+            </div>
+            <div class="time-status">
+                <span id="hour">00</span>:
+                <span id="min">00</span>:
+                <span id="sec">00</span>
+                <span id="fore-noon">AM</span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy;copyright | <a href="https://www.linkedin.com/in/manisha-m-4b07b9254/"><b>Maneesha</a></b> | 2024</p>
+        </div>
+    </div>
+
+
+    <div class="loading">
+        <p id="num"></p>
+        <div class="circle"></div>
+    </div>
+    <script src="project3.js"></script>
+</body>
+
+</html>
