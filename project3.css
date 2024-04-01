@@ -1,0 +1,221 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Golos Text', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+header{
+    margin:0 0 0 1.6%;
+}
+body {
+    font-size: 1.4em;
+    color: #fff;
+    position: relative;
+    height: auto;
+    background: #86b3b4;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate;
+}
+
+.circle::before,
+#num {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle::before {
+    content: "";
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#num {
+    z-index: 999;
+    animation: none;
+    color: #000;
+    font-size: 0.9em;
+}
+
+.display {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.to-do-list {
+    padding: 1%;
+    height: 100vh;
+}
+
+.heading {
+    font-size: 1.2em;
+    margin: 1% 0 2% 0;
+}
+
+input {
+    margin-left: 11%;
+    background: none;
+    border: 2px solid #b7c03f;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #d364cd;
+    font-size: 1.1em;
+    color: #d364cd;
+}
+
+input::placeholder {
+    color:  #d364cd ;
+    font-size: 0.9em;
+}
+
+.btn {
+    outline: none;
+    background:  #d364cd;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #0c0909;
+    font-size: 0.9em
+}
+
+.li {
+    list-style: none;
+    width: 90%;
+    background: #DD5353;
+    box-shadow: 3px 3px 4px #002B5B;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.edit,
+.delete,
+.icon {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #0c0b0b;
+    font-size: 17px;
+    width: 10%;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.time {
+    width: 20%;
+    margin-left: 2px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.usinput {
+    margin: 0;
+    width: 50%;
+    overflow: hidden;
+}
+
+.date-time {
+    position: absolute;
+    right: 4%;
+    top: 10%;
+}
+
+.date-time .time-status {
+    text-align: right;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.complete {
+    margin: 3% 0 0 0;
+    width: 50%;
+    border-right: 2px dotted #d364cd;
+    min-height: 60vh;
+    height: auto;
+}
+
+.complete:last-child {
+    border: none;
+}
+
+.complete h2 {
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.list {
+    margin-left: 10%;
+}
+
+.completed-li {
+    background: #57C5B6;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 2%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.copyright a {
+    text-decoration: none;
+    color:  #d364cd;
+}
+
+.completed-list {
+    width: 90%;
+    margin-left: 10%;
+}
+
+.input-completed {
+    width: 60%;
+}
+
+.completed-time,
+.completed-del {
+    width: 20%;
+    text-align: center;
+}
+
+.edit-input {
+    margin-left: 0;
+    width: 53%;
+    color: #0c0a0a;
+    border-bottom: 2px solid #0e0d0d;
+}
